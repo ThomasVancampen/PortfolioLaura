@@ -1,0 +1,20 @@
+<mat-tab-group [ngClass]="{'hide':menu.hide}">
+  <mat-tab label="Am I Ugly">
+    <div class="container">
+      <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide *ngFor="let image of imgs;let i= index">
+          <div class="picsum-img-wrapper">
+            <img id="img" src="../../assets/amIUgly/img_{{i+1}}.jpg" width="532" height="800" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </mat-tab>
+  <mat-tab label="Second"> Content 2 </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
+

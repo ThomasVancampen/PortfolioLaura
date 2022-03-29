@@ -1,0 +1,15 @@
+body{
+  font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 85vh;
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 25px;
+}
